@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Music</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Music</h1>
+    <div class="album-container">
+        {% for album, cover_path in albums %}
+            <a href="{{ url_for('album', album_name=album) }}" class="album-item">
+                <img src="{{ cover_path }}" alt="{{ album }}">
+                <p>{{ album }}</p>
+            </a>
+        {% endfor %}
+    </div>
+</body>
+</html>
