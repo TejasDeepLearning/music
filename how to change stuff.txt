@@ -1,0 +1,6 @@
+git add .
+git commit -m "Updated album folders, added new MP3 files, and changed cover artwork"
+git push
+
+
+first add the new files, then commit, then push. whatever. 
